@@ -1,19 +1,14 @@
 // import React, { Component } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const ErrorText = styled.p`
-  color: red;
-`;
+// const ErrorText = styled.p`
+//   color: red;
+// `;
 
 const FormError = ({ name }) => {
-  return (
-    <ErrorMessage
-      name={name}
-      render={message => <ErrorText>{message}</ErrorText>}
-    />
-  );
+  return <ErrorMessage name={name} />;
 };
 
 const products = ['Sweater', 'Keyboard', 'Sofa', 'Freezer'];
